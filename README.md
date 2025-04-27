@@ -35,10 +35,6 @@ Enter all the required details to Import your model. Refer [this link](https://d
 ---
 ## Curl Command
 Following is an example of the curl command you can use to make inference. You can find the exact curl command in the Model's API page in Inferless.
-    task_type: str = Field(default="image")
-    prompt: Optional[str] ="What is shown in this image?"
-    content_url: Optional[str] ="https://www.ilankelman.org/stopsigns/australia.jpg"
-    max_new_tokens: Optional[int] = 128
 ```bash
 curl --location '<your_inference_url>' \
     --header 'Content-Type: application/json' \
